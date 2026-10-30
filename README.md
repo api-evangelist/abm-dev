@@ -64,5 +64,146 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-abm-dev is a company surfaced via the API Evangelist harvest backlog (source: mcp-registry) and added to the network as a stub for full-pipeline profiling.
-- https://abm.dev/
+ABM.dev provides an account‑based marketing API designed for AI agents, delivering searchable, enriched B2B person and company data with source citations and confidence scores. The platform offers a single endpoint to search, enrich, and create outreach actions, supporting streaming results via SSE and integrating with tools like LinkedIn, Hunter, Perplexity, and Tavily. Public beta is available with flexible pricing per enrichment. The service aims to automate personalized marketing at scale for marketers, developers, and autonomous agents.
+
+**Areas:** Account-Based Marketing · AI Agents · Data Enrichment · B2B · Marketing API
+
+## abm-dev on APIs.io
+
+Everything profiled for abm-dev is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/abm-dev/](https://apis.io/providers/abm-dev/)** — or go straight to one of the APIs or properties below.
+
+### APIs (9)
+
+- [abm-dev Campaigns API](https://apis.io/apis/abm-dev/abm-dev-campaigns-api/) — Orchestrate multi-step outreach campaigns that combine people-finding, enrichment, and CRM writeback
+- [abm-dev CRM API](https://apis.io/apis/abm-dev/abm-dev-crm-api/) — CRM integration configuration and field mappings
+- [abm-dev Enrichment API](https://apis.io/apis/abm-dev/abm-dev-enrichment-api/) — Core enrichment operations - enrich persons and companies with data from multiple sources
+- [abm-dev Enrichment Config API](https://apis.io/apis/abm-dev/abm-dev-enrichment-config-api/) — Global enrichment settings — source priority, auto-approval, writeback behavior
+- [abm-dev Field Configuration API](https://apis.io/apis/abm-dev/abm-dev-field-configuration-api/) — Configure which enrichment fields are enabled, required, or mapped to CRM properties
+- [abm-dev Health API](https://apis.io/apis/abm-dev/abm-dev-health-api/) — System health monitoring
+- [abm-dev Organization API](https://apis.io/apis/abm-dev/abm-dev-organization-api/) — Account and workspace management
+- [abm-dev People Finder API](https://apis.io/apis/abm-dev/abm-dev-people-finder-api/) — Find decision-makers at target companies by role — powered by multi-source search and optional enrichment
+- [abm-dev Webhooks API](https://apis.io/apis/abm-dev/abm-dev-webhooks-api/) — Subscribe to real-time event notifications for enrichments, campaigns, and system events
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Abm Dev Agentic Access](https://apis.io/agentic-access/abm-dev/abm-dev-agentic-access/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [ApiKeySummary](https://apis.io/schemas/abm-dev/abm-dev-api-key-summary/)
+- [CreateApiKeyResponse](https://apis.io/schemas/abm-dev/abm-dev-create-api-key-response/)
+- [EnrichmentConfiguration](https://apis.io/schemas/abm-dev/abm-dev-enrichment-configuration/)
+- [PersonFinderCandidate](https://apis.io/schemas/abm-dev/abm-dev-person-finder-candidate/)
+- [PersonFinderJob](https://apis.io/schemas/abm-dev/abm-dev-person-finder-job/)
+- [SignupOrganizationResponse](https://apis.io/schemas/abm-dev/abm-dev-signup-organization-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Abm Dev Context](https://apis.io/jsonld/abm-dev/abm-dev-context/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Abm Dev Openapi Overlay](https://apis.io/overlays/abm-dev/abm-dev-openapi-overlay/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [abm-dev API Rules](https://apis.io/rules/abm-dev/abm-dev-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Abm Dev Authentication](https://apis.io/security/abm-dev/abm-dev-authentication/)
+- [Abm Dev Domain Security](https://apis.io/security/abm-dev/abm-dev-domain-security/)
+- [Abm Dev Vulnerability Disclosure](https://apis.io/security/abm-dev/abm-dev-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Abm Dev Scopes](https://apis.io/scopes/abm-dev/abm-dev-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://abm.dev/)
+- [Documentation](https://abm.dev/docs)
+- [Getting started](https://abm.dev/docs)
+- [API reference](https://abm.dev/docs)
+- [Pricing](https://abm.dev/pricing)
+- [Sign up](https://abm.dev/sign-up)
+- [Support](https://abm.dev/help)
+- [Blog](https://abm.dev/blog)
+- [Security](https://abm.dev/security)
+- [Privacy policy](https://abm.dev/privacy)
+- [GitHub](https://github.com/abm-dev-git)
+
+## API Evangelist rating
+
+**Kin Score 56.5** — strong · rubric 0.25.0 · scored 2026-10-30
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 58.7 |
+| Contract governance | 79.1 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 68.3 |
+| Access clarity | 34.2 |
+
+**Agent readiness 31.2** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | unknown |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | partial |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 36.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/abm-dev/](https://apis.io/providers/abm-dev/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for abm-dev: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/abm-dev/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
