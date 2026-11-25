@@ -66,7 +66,7 @@
 
 ABM.dev provides an account‑based marketing API designed for AI agents, delivering searchable, enriched B2B person and company data with source citations and confidence scores. The platform offers a single endpoint to search, enrich, and create outreach actions, supporting streaming results via SSE and integrating with tools like LinkedIn, Hunter, Perplexity, and Tavily. Public beta is available with flexible pricing per enrichment. The service aims to automate personalized marketing at scale for marketers, developers, and autonomous agents.
 
-**Areas:** Account-Based Marketing · AI Agents · Data Enrichment · B2B · Marketing API
+**Areas:** Account Based Marketing · AI Agents · Data Enrichment · B2B · Marketing API
 
 ## abm-dev on APIs.io
 
@@ -92,18 +92,23 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Abm Dev Agentic Access](https://apis.io/agentic-access/abm-dev/abm-dev-agentic-access/)
+- [abm-dev Agentic Access](https://apis.io/agentic-access/abm-dev/abm-dev-agentic-access/)
 
-#### JSON Schema (6)
+#### JSON Schema (11)
 
 The data models the API reads and writes.
 
 - [ApiKeySummary](https://apis.io/schemas/abm-dev/abm-dev-api-key-summary/)
 - [CreateApiKeyResponse](https://apis.io/schemas/abm-dev/abm-dev-create-api-key-response/)
 - [EnrichmentConfiguration](https://apis.io/schemas/abm-dev/abm-dev-enrichment-configuration/)
+- [EnrichmentInput](https://apis.io/schemas/abm-dev/abm-dev-enrichment-input/)
+- [EnrichmentResult](https://apis.io/schemas/abm-dev/abm-dev-enrichment-result/)
+- [EnrichmentSummary](https://apis.io/schemas/abm-dev/abm-dev-enrichment-summary/)
+- [FieldConfig](https://apis.io/schemas/abm-dev/abm-dev-field-config/)
 - [PersonFinderCandidate](https://apis.io/schemas/abm-dev/abm-dev-person-finder-candidate/)
 - [PersonFinderJob](https://apis.io/schemas/abm-dev/abm-dev-person-finder-job/)
 - [SignupOrganizationResponse](https://apis.io/schemas/abm-dev/abm-dev-signup-organization-response/)
+- [WebhookSubscription](https://apis.io/schemas/abm-dev/abm-dev-webhook-subscription/)
 
 #### JSON-LD (1)
 
@@ -115,7 +120,7 @@ Linked-data contexts for the provider's vocabulary.
 
 OpenAPI overlays, including conversational phrasing for each operation.
 
-- [Abm Dev Openapi Overlay](https://apis.io/overlays/abm-dev/abm-dev-openapi-overlay/)
+- [abm-dev Openapi Overlay](https://apis.io/overlays/abm-dev/abm-dev-openapi-overlay/)
 
 #### Governance rules (1)
 
@@ -127,15 +132,15 @@ Spectral rulesets for the provider's contracts.
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Abm Dev Authentication](https://apis.io/security/abm-dev/abm-dev-authentication/)
-- [Abm Dev Domain Security](https://apis.io/security/abm-dev/abm-dev-domain-security/)
-- [Abm Dev Vulnerability Disclosure](https://apis.io/security/abm-dev/abm-dev-vulnerability-disclosure/)
+- [abm-dev Authentication](https://apis.io/security/abm-dev/abm-dev-authentication/)
+- [abm-dev Domain Security](https://apis.io/security/abm-dev/abm-dev-domain-security/)
+- [abm-dev Vulnerability Disclosure](https://apis.io/security/abm-dev/abm-dev-vulnerability-disclosure/)
 
 #### OAuth scopes (1)
 
 The permissions the API asks for.
 
-- [Abm Dev Scopes](https://apis.io/scopes/abm-dev/abm-dev-scopes/)
+- [abm-dev Scopes](https://apis.io/scopes/abm-dev/abm-dev-scopes/)
 
 ## Where to find this API
 
@@ -155,28 +160,28 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 56.5** — strong · rubric 0.25.0 · scored 2026-10-30
+**Kin Score 55.9** — strong · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
-| Discoverability | 66.1 |
-| Contract quality | 58.7 |
-| Contract governance | 79.1 |
-| Operational transparency | 15.8 |
+| Discoverability | 83.9 |
+| Contract quality | 61.8 |
+| Contract governance | 22.0 |
+| Operational transparency | 14.3 |
 | Developer ergonomics | 68.3 |
-| Access clarity | 34.2 |
+| Access clarity | 31.9 |
 
-**Agent readiness 31.2** — agent-ready
+**Agent readiness 28.0** — agent-aware
 
 | Agent-readiness dimension | Result |
 |---|---|
 | Spec Presence | yes |
-| Agentic Access | unknown |
+| Agentic Access | derived (partial credit) |
 | Reversibility Documented | — |
-| MCP Server | documented (partial credit) |
+| MCP Server | — |
 | Auth Clarity | bearer (partial credit) |
 | Idempotency | — |
-| Error Semantics | derived (partial credit) |
+| Error Semantics | verified |
 | OpenAPI Examples | — |
 | Rate Limit Signal | — |
 | Event Surface Described | — |
@@ -191,6 +196,10 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Agentic Commerce | — |
 | Pagination Ratio | partial |
 | Operation Distinctiveness | distinct |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
 **Regulatory alignment 36.3** — Horizontal (data, software, accessibility, platform)
 
